@@ -1,0 +1,32 @@
+.fantasy_page {
+  background: #554f47;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  position: absolute;
+  color: white;
+  text-align: center;
+}
+
+.dd_title {
+  text-align: center;
+}
+
+.trade_input_box {
+  color: black;
+  width: 65%;
+  border-radius: 30px;
+  border: solid 6px black;
+  padding-top: 23px;
+  padding-bottom: 7px;
+  background-color: white;
+  margin: auto;
+}
+
+.hide {
+  display: none;
+}
+
+.submit_trade_button {
+  margin: 20px;
+}

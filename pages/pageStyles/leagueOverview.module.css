@@ -1,0 +1,192 @@
+/* @import url('../global.css'); */
+
+@font-face {
+  font-family: 'Reedo';
+  src: local('Reedo'), url(../../styles/fonts/reedoRegular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Reedo';
+  src: local('Reedo'), url(../../styles/fonts/reedoBold.woff) format('woff');
+}
+
+.league_overview_page {
+  background-color: lightgray;
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  /* background-size: cover;
+  height: 100%; */
+  min-height: 100vh;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  font-family: 'Reedo';
+  text-shadow: -2px 2px 1px rgb(0 0 0 / 20%);
+  font-size: 80px;
+  padding-bottom: 2%;
+}
+
+.uga_background {
+  top: 0;
+  left: 0;
+  z-index: -1;
+  /* height: 100%; */
+  opacity: 0.15;
+  position: absolute;
+  background-size: cover;
+  filter: grayscale(80%);
+}
+
+.page_content {
+  display: grid;
+  grid: 1fr / 3fr 5fr;
+  align-items: start;
+  justify-items: center;
+  background-color: lightgray;
+  contain: layout;
+  padding-bottom: 100px;
+}
+
+#teams_box {
+  justify-self: end;
+}
+
+.victory_text {
+  display: flex;
+  line-height: normal;
+  align-items: center;
+  box-shadow: -1px 1px 5px 0px black;
+  border-radius: 12px;
+  transform: skewX(-10deg);
+  top: 30%;
+  width: 43%;
+  min-width: 750px;
+  left: 48%;
+  position: absolute;
+  height: 30%;
+  padding: 0px 20px;
+  font-family: 'Reedo';
+  font-size: 100px;
+  background-color: black;
+  color: white;
+  background: -webkit-linear-gradient(red, #333);
+  z-index: 1;
+  text-shadow: -3px 3px 3px black;
+}
+
+.victory_text i {
+  min-width: 655px;
+}
+
+.homepage_graphic {
+  justify-self: end;
+}
+
+.winding_road {
+  /* padding: 100px 0px 0px 50px; */
+  width: 830px;
+  height: auto;
+  margin-left: -50px;
+  opacity: 0.2;
+  /* transform: scale(0.5); */
+}
+
+.trophy {
+  width: 170px;
+  margin: -90px 0px 0px -50px;
+  height: auto;
+  vertical-align: top;
+  opacity: 0.25;
+}
+
+.title_load_fade {
+  animation: titleFadeIn 3s;
+}
+
+.text_load_fade {
+  /* transition-timing-function: ease-out; */
+  animation: textFadeIn 5s;
+}
+
+.teams_load_fade {
+  animation: teamsFadeIn 9s;
+}
+
+.roster_card {
+  position: absolute;
+  left: 47%;
+}
+
+#roster_loading {
+  position: absolute;
+  left: 60%;
+  top: 20%;
+  z-index: 2;
+}
+
+.hidden {
+  display: none;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+@keyframes titleFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes textFadeIn {
+  0% {
+    display: none;
+    transform: translateY(-125%) skewX(-10deg);
+    opacity: 0;
+  }
+  39% {
+    display: none;
+    transform: translateY(-125%) skewX(-10deg);
+    opacity: 0;
+  }
+  40% {
+    display: flex;
+    transform: translateY(-125%) skewX(-10deg);
+    left: 30%;
+    opacity: 0;
+  }
+  90% {
+    display: flex;
+    transform: translateY(0) skewX(-10deg);
+    left: 30%;
+    opacity: 1;
+  }
+  100% {
+    display: flex;
+    transform: translateY(0) skewX(-10deg);
+    left: 48%;
+    opacity: 1;
+  }
+}
+
+@keyframes teamsFadeIn {
+  0% {
+    visibility: hidden;
+  }
+  49% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: visible;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

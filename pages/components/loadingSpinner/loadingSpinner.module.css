@@ -1,0 +1,24 @@
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loading_spinner {
+  width: 50px;
+  height: 50px;
+  border: 10px solid black; /* Black */
+  border-top: 10px solid #ba0c2f; /* UGA Red */
+  border-radius: 50%;
+  animation: spinner 1.5s linear infinite;
+}
+
+.spinner_container {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  text-align: center;
+  /* min-height: 100vh; */
+}

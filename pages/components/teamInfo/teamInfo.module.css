@@ -1,0 +1,47 @@
+#football_icon {
+  /* color: #825736; */
+  margin-right: 5px;
+}
+
+.owner_name {
+  color: #4b4b4b;
+}
+
+.separator {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 28px;
+  border-top: 1px solid #00000026;
+}
+
+#separator_2 {
+  margin-top: 20px;
+}
+
+.team_record {
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+#user_icon {
+  text-align: center;
+  /* color: #ba0c2f; red UGA color*/
+  margin-right: 5px;
+}
+
+#roster_button {
+  font-size: 12px;
+  /* padding-top: 15px; */
+}
+
+#placement_icon {
+  padding-right: 17px;
+}
+
+.right_arrow {
+  margin-right: 5px;
+}
+
+.hidden {
+  display: none;
+}

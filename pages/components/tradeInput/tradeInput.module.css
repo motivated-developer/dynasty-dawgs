@@ -1,0 +1,25 @@
+.trade_input {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.trade_input_text {
+  font-size: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.players_group,
+.picks_group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.player_selections,
+.pick_selections {
+  padding-bottom: 5px;
+}
