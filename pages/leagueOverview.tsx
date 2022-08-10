@@ -93,7 +93,7 @@ export default function LeagueOverview() {
             }`}
           >
             <i>
-              <b>The Road To The Title '23</b>
+              <b>The Road To The Title &apos;23</b>
             </i>
           </div>
           <img
