@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import styles from './pageStyles/newtrade.module.css';
-import PrimaryButton from './utils/primaryButton';
-import TradeInput from './components/tradeInput/tradeInput';
-import TradeString from './components/tradeString/tradeString';
-import { getTeams, getPicks, getRoster } from './utils/sleeperGetters';
+import PrimaryButton from '../public/utils/primaryButton';
+import TradeInput from '../components/tradeInput/tradeInput';
+import TradeString from '../components/tradeString/tradeString';
+import { getTeams, getPicks, getRoster } from '../public/utils/sleeperGetters';
 
 interface teamFormat {
   metadata?: {

@@ -1,9 +1,8 @@
 import React from 'react';
 import styles from './rosterDisplay.module.css';
 
-import { playerDetails } from '../../playerData/playerData';
+import playerData, { playerDetails } from '../../public/playerData/playerData';
 // import {playerDataInterface} from '../../playerData/playerData'
-import playerData from '../../playerData/playerData';
 import PlayerInfo from '../playerInfo/playerInfo';
 
 interface props {

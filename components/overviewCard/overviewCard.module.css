@@ -1,14 +1,3 @@
-@font-face {
-  font-family: 'Reedo';
-  src: local('Reedo'),
-    url(../../../styles/fonts/reedoRegular.woff) format('woff');
-}
-
-@font-face {
-  font-family: 'Reedo';
-  src: local('Reedo'), url(../../../styles/fonts/reedoBold.woff) format('woff');
-}
-
 .content_box {
   display: flex;
   flex-direction: row;

@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import styles from './pageStyles/leagueOverview.module.css';
 
-import RosterDisplay from './components/rosterDisplay/rosterDisplay';
-import OverviewCard from './components/overviewCard/overviewCard';
-import TeamInfo from './components/teamInfo/teamInfo';
-import { getTeams, getSingleTeam } from './utils/sleeperGetters';
-import { team } from './interfaces/team.interface';
-import LoadingSpinner from './components/loadingSpinner/loadingSpinner';
+import RosterDisplay from '../components/rosterDisplay/rosterDisplay';
+import OverviewCard from '../components/overviewCard/overviewCard';
+import TeamInfo from '../components/teamInfo/teamInfo';
+import { getTeams, getSingleTeam } from '../public/utils/sleeperGetters';
+import { team } from '../public/interfaces/team.interface';
+import LoadingSpinner from '../components/loadingSpinner/loadingSpinner';
 
 export default function LeagueOverview() {
   const totalTeams: number = 8;
