@@ -1,5 +1,3 @@
-name: Flat
-
 on:
   push:
     branches:
@@ -25,4 +23,4 @@ jobs:
         uses: githubocto/flat@v3
         with:
           http_url: https://api.sleeper.app/v1/players/nfl
-          downloaded_filename: dynasty-dawgs/public/playerData/playerData.json
+          downloaded_filename: ./public/playerData/playerData.json
