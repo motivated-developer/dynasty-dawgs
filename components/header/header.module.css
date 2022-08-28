@@ -1,0 +1,26 @@
+.drawer_header {
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  cursor: pointer;
+  border-bottom: 1px solid black;
+}
+
+.drawer_header h2 {
+  margin: 0px;
+}
+
+.drawer_item {
+  text-align: center;
+  border-bottom: 1px solid black;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.drawer_item:hover {
+  background-color: lightgray;
+}
+
+.drawer_item h3 {
+  margin: 0px;
+}

@@ -30,6 +30,10 @@ export default function TradeInput(props: Props) {
       ...provided,
       color: 'black',
     }),
+    container: (provided) => ({
+      ...provided,
+      width: '150px',
+    }),
   };
 
   return (

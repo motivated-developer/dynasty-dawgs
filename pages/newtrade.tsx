@@ -12,7 +12,7 @@ interface teamFormat {
   user_id?: string;
 }
 
-function NewTrade() {
+export default function NewTrade() {
   const [team1, setTeam1] = useState<string>('');
   const [team2, setTeam2] = useState<string>('');
   const [players1, setPlayers1] = useState<string[]>(['']);
@@ -112,6 +112,7 @@ function NewTrade() {
   return (
     <div className={styles.fantasy_page}>
       <h2 className={styles.dd_title}>Input Trade</h2>
+      <p>Enter a trade here to submit it to the league records</p>
       <div className={styles.trade_input_box}>
         <TradeInput
           receivingTeam={team2}
@@ -159,5 +160,3 @@ function NewTrade() {
     </div>
   );
 }
-
-export default NewTrade;

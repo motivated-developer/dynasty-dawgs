@@ -5,7 +5,7 @@ import Button from '@mui/material/Button';
 const theme = createTheme({
   palette: {
     neutral: {
-      main: '#BA0C2F',
+      main: '#ba0c2f',
       contrastText: '#FFFFFF',
     },
   },
@@ -41,6 +41,19 @@ export default function PrimaryButton(props: props) {
         color="neutral"
         variant="contained"
         onClick={() => props.onClick()}
+        sx={{
+          color: 'white',
+          fontFamily: 'inherit',
+          textTransform: 'none',
+          backgroundColor: '#ba0c2f',
+          marginTop: '20px',
+          boxShadow: '-1px 2px 3px 0px rgb(0 0 0 / 25%)',
+          borderRadius: '7px',
+          '&:hover': {
+            background: 'black',
+            color: '#ba0c2f',
+          },
+        }}
       >
         {props.buttonText}
       </Button>
