@@ -51,9 +51,9 @@ export default function Header() {
                     <h3>League Overview</h3>
                   </div>
                 </Link>
-                <Link href="/newtrade">
+                <Link href="/trades">
                   <div className={styles.drawer_item}>
-                    <h3>Submit a Trade</h3>
+                    <h3>League Trades</h3>
                   </div>
                 </Link>
               </Box>
